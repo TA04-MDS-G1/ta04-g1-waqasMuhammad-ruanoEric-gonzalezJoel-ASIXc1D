@@ -4,7 +4,7 @@ import time
 import random
 import requests
 from faker import Faker
-# TA04
+# TA04 . 
 fake = Faker('es_ES')
 
 def obtener_estructura_formulario(url_form):
