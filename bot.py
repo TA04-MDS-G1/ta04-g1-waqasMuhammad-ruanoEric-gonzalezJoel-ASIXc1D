@@ -1,10 +1,31 @@
+'''
+TA04 - ASIXc1
+
+Integrantes:
+- Joel González 
+- Eric Ruiz
+- Muhammad Waqas
+
+Descripción:
+Este script automatiza el llenado y envío de formularios de Google Forms.
+
+Automáticamente analiza la estructura del formulario, genera respuestas aleatorias utilizando la biblioteca Faker y envía las respuestas al formulario.
+
+Uso:
+1. Instalar las dependencias necesarias:
+   pip install requests faker 
+2. Ejecutar el script:
+   python bot.py   
+
+'''
+
 import re
 import json
 import time
 import random
 import requests
 from faker import Faker
-# TA04 . 
+ 
 fake = Faker('es_ES')
 
 def obtener_estructura_formulario(url_form):
